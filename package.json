@@ -1,0 +1,22 @@
+{
+  "name": "webpack4-starter-kit",
+  "version": "1.0.0",
+  "description": "Webpack 4 scaffolding",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/king-prawns/webpack4-starter-kit.git"
+  },
+  "author": "“Giorgio <“giorgio.gamberoni@gmail.com”> (“https://github.com/king-prawns”)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/king-prawns/webpack4-starter-kit/issues"
+  },
+  "homepage": "https://github.com/king-prawns/webpack4-starter-kit#readme",
+  "devDependencies": {
+    "webpack": "4.1.1"
+  }
+}
