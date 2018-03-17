@@ -66,5 +66,5 @@ $ yarn httpserver
 * [Autoprefixer](https://github.com/postcss/autoprefixer)
 * [Ava](https://github.com/avajs/ava)
 * [nyc](https://github.com/istanbuljs/nyc)
-* [Web Components ready](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
+* [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
 * Webpack Plugins: Html, Copy, ExtractText, Define
