@@ -1,0 +1,25 @@
+{
+  "comments": false,
+  "presets": [
+    ["flow"],
+    [
+      "env",
+      {
+        "targets": {
+          "browsers": [
+            "last 2 versions",
+            "ie >= 11"
+          ]
+        },
+        "useBuiltIns": true
+      }
+    ]
+  ],
+  "plugins": [
+    "transform-custom-element-classes",
+    "transform-es2015-classes",
+    "syntax-object-rest-spread",
+    "transform-object-rest-spread",
+    "transform-runtime"
+  ]
+}

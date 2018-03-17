@@ -1,0 +1,13 @@
+@keyframes CC {
+  0%  {
+    color: var(--black, #333);
+  }
+
+  50% {
+    color: var(--grey, #333);
+  }
+
+  100% {
+    color: var(--black, #333);
+  }
+}

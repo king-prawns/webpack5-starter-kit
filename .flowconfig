@@ -1,0 +1,13 @@
+[ignore]
+.*/src/\(lib\|components\)/**/test/.*
+.*/src/assets
+.*/test
+.*/node_modules/webpack-cli
+.*/node_modules/stylelint
+
+[include]
+
+[libs]
+
+[options]
+module.name_mapper.extension='html' -> '<PROJECT_ROOT>/.flow/html-resolver.js.flow'

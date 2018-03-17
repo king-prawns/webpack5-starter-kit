@@ -1,0 +1,18 @@
+{
+  "name": "webpack4-starter-kit",
+  "version": "1.0.0",
+  "short_name": "w4kit",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFF",
+  "orientation": "portrait-primary",
+  "description": "Webpack 4 starter kit",
+  "theme_color": "#ffd1dc",
+  "icons": [
+    {
+      "src": "./assets/images/touchicon.png",
+      "sizes": "48x48 72x72 96x96 144x144 168x168 192x192",
+      "type": "image/png"
+    }
+  ]
+}

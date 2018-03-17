@@ -1,3 +1,10 @@
+*.zip
+*.log
 
-node_modules
+.vscode
+.DS_Store
+.nyc_output
+
 dist
+node_modules
+bower_components
