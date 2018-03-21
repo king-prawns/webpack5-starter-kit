@@ -1,4 +1,3 @@
-// TODO: https://github.com/JaKXz/stylelint-webpack-plugin/issues/137
 // const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
