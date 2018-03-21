@@ -68,3 +68,7 @@ $ yarn httpserver
 * [nyc](https://github.com/istanbuljs/nyc)
 * [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
 * Webpack Plugins: Html, Copy, ExtractText, Define
+
+## TypeScript
+
+### PLEASE GO TO [TS BRANCH](https://github.com/king-prawns/webpack4-starter-kit/tree/typescript)
