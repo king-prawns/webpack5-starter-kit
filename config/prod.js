@@ -13,10 +13,11 @@ fs.remove(path.resolve(__dirname, '../dist'), (err) => {
     spinner.fail('error - fs.remove');
     throw err;
   }
-  webpack(config, (werr, stats) => {
-    spinner.succeed('build complete! 🎉');
+  webpack(config, (werr, stats, e) => {
+    console.log('\n');
+
     if (werr) {
-      spinner.fail('error - build');
+      spinner.fail('Build error. 😭');
       throw werr;
     }
     process.stdout.write(`${stats.toString({
@@ -27,7 +28,7 @@ fs.remove(path.resolve(__dirname, '../dist'), (err) => {
       chunkModules : false
     })}\n\n`);
 
-    console.log(chalk.green(' Build complete.\n'));
+    spinner.succeed('Build complete. 🎉\n');
     console.log(chalk.yellow(' Tip: built files are meant to be served over an HTTP server.\n' +
       ' Opening index.html over file:// won\'t work.\n'));
   });
