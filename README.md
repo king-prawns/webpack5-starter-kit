@@ -61,7 +61,7 @@ $ yarn httpserver
 * [Babel](https://babeljs.io/)
 * [Flow](https://flow.org/)
 * [EsLint](https://eslint.org/docs/user-guide/getting-started)
-* [StyleLint](https://github.com/stylelint/stylelint)
+* <s>[StyleLint](https://github.com/stylelint/stylelint)</s> [(open issue)](https://github.com/JaKXz/stylelint-webpack-plugin/issues/137)
 * [Sass](https://github.com/webpack-contrib/sass-loader)
 * [Autoprefixer](https://github.com/postcss/autoprefixer)
 * [Ava](https://github.com/avajs/ava)
