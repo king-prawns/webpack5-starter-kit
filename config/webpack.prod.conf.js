@@ -8,9 +8,8 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = merge(base, {
-  mode    : 'production',
-  devtool : 'source-map',
-  output  : {
+  mode   : 'production',
+  output : {
     path       : path.resolve(__dirname, '../dist'),
     publicPath : '/',
     filename   : '[chunkhash].app.js'
