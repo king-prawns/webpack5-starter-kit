@@ -1,4 +1,4 @@
-// const StyleLintPlugin = require('stylelint-webpack-plugin');
+const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
   module: {
@@ -25,8 +25,8 @@ module.exports = {
         limit: 10000
       }
     }]
-  }
-  // plugins: [
-  //   new StyleLintPlugin()
-  // ]
+  },
+  plugins: [
+    new StyleLintPlugin()
+  ]
 };
