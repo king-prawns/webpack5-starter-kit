@@ -6,6 +6,7 @@ const autoprefixer = require('autoprefixer');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const OfflinePlugin = require('offline-plugin');
 
 module.exports = merge(base, {
   mode   : 'production',
@@ -79,6 +80,11 @@ module.exports = merge(base, {
     ]),
     new webpack.DefinePlugin({
       PRODUCTION: JSON.stringify(true)
+    }),
+    new OfflinePlugin({
+      ServiceWorker: {
+        minify: false
+      }
     })
   ]
 });

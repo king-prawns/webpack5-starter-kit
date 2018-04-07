@@ -67,6 +67,7 @@ $ yarn httpserver
 * [Ava](https://github.com/avajs/ava)
 * [nyc](https://github.com/istanbuljs/nyc)
 * [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
+* [Service Worker](https://github.com/NekR/offline-plugin)
 * Webpack Plugins: Html, Copy, ExtractText, Define
 
 ## TypeScript
