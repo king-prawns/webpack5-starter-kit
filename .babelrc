@@ -19,7 +19,6 @@
     "transform-custom-element-classes",
     "transform-es2015-classes",
     "syntax-object-rest-spread",
-    "transform-object-rest-spread",
     "transform-runtime"
   ]
 }
