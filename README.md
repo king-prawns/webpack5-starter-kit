@@ -7,7 +7,21 @@ Webpack 4 with webpack-dev-server configuration (and Web Components).
 - Node >= v6.x
 - Yarn >= v1.1 | NPM >= v5.0
 
-## Installation
+## Installation via CLI
+
+  * Install w4kit-cli
+
+```
+npm install -g w4kit-cli
+```
+
+  * launch the CLI
+
+```
+w4kit
+```
+
+## Installation via Clone
 
 * Clone this repository
 
