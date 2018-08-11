@@ -4,12 +4,12 @@
   "description": "Webpack 4 starter kit",
   "main": "./src/index.js",
   "scripts": {
-    "postinstall": "yarn run build",
     "dev": "node ./config/dev",
     "build": "node ./config/prod",
     "lint": "eslint ./src",
     "flow": "flow",
     "test": "nyc ava",
+    "prehttpserver": "yarn build",
     "httpserver": "http-server ./dist -p 8082 --silent"
   },
   "author": "Giorgio Gamberoni <giorgio.gamberoni@gmail.com> (https://github.com/king-prawns)",
