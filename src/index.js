@@ -1,5 +1,5 @@
 import '@webcomponents/webcomponentsjs/webcomponents-bundle'; // polyfill
-import './assets/styles/main.scss';
+import './index.pcss';
 import MyApp from './components/my-app';
 
 if (PRODUCTION) {

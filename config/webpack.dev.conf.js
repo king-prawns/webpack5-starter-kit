@@ -16,7 +16,7 @@ module.exports = merge(base, {
   },
   module: {
     rules: [{
-      test : /(\.scss|\.css)$/,
+      test : /(\.css|\.pcss)$/,
       use  : ExtractTextPlugin.extract({
         use: [
           {
@@ -25,17 +25,8 @@ module.exports = merge(base, {
           {
             loader  : 'css-loader', // translates CSS into CommonJS
             options : {
-              sourceMap: true
-            }
-          },
-          {
-            loader  : 'postcss-loader', // postprocesses CSS
-            options : {
-              sourceMap : true,
-              ident     : 'postcss',
-              plugins   : () => [
-                autoprefixer()
-              ]
+              sourceMap     : true,
+              importLoaders : 2
             }
           },
           {
@@ -43,9 +34,10 @@ module.exports = merge(base, {
             loader: 'resolve-url-loader'
           },
           {
-            loader  : 'sass-loader', // compiles Sass to CSS
+            loader  : 'postcss-loader', // postprocesses CSS
             options : {
-              sourceMap: true
+              sourceMap : true,
+              ident     : 'postcss'
             }
           }
         ]
