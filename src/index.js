@@ -1,4 +1,4 @@
-import '@webcomponents/webcomponentsjs'; // polyfill
+import '@webcomponents/webcomponentsjs/webcomponents-bundle'; // polyfill
 import './assets/styles/main.scss';
 import MyApp from './components/my-app';
 

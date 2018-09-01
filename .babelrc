@@ -1,24 +1,14 @@
 {
   "comments": false,
   "presets": [
-    ["flow"],
+    ["@babel/preset-flow"],
     [
-      "env",
+      "@babel/preset-env",
       {
-        "targets": {
-          "browsers": [
-            "last 2 versions",
-            "ie >= 11"
-          ]
-        },
-        "useBuiltIns": true
+        "targets": "> 0.25%, not dead",
+        "useBuiltIns": "entry"
       }
     ]
   ],
-  "plugins": [
-    "transform-custom-element-classes",
-    "transform-es2015-classes",
-    "syntax-object-rest-spread",
-    "transform-runtime"
-  ]
+  "plugins": ["@babel/plugin-transform-runtime"]
 }
