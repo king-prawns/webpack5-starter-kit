@@ -24,18 +24,9 @@ module.exports = merge(base, {
           {
             loader  : 'css-loader', // translates CSS into CommonJS
             options : {
-              minimize  : true,
-              sourceMap : true
-            }
-          },
-          {
-            loader  : 'postcss-loader', // postprocesses CSS
-            options : {
-              sourceMap : true,
-              ident     : 'postcss',
-              plugins   : () => [
-                autoprefixer()
-              ]
+              minimize      : true,
+              sourceMap     : true,
+              importLoaders : 2
             }
           },
           {
@@ -43,9 +34,10 @@ module.exports = merge(base, {
             loader: 'resolve-url-loader'
           },
           {
-            loader  : 'sass-loader', // compiles Sass to CSS
+            loader  : 'postcss-loader', // postprocesses CSS
             options : {
-              sourceMap: true
+              sourceMap : true,
+              ident     : 'postcss'
             }
           }
         ]

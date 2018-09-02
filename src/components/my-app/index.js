@@ -1,4 +1,4 @@
-import './style.scss';
+import './style.pcss';
 import view from './template.html';
 
 const html = String.raw;
