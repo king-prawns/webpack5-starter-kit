@@ -62,6 +62,7 @@
     "postcss-loader": "3.0.0",
     "postcss-preset-env": "5.3.0",
     "postcss-reporter": "6.0.0",
+    "postcss-responsive-type": "1.0.0",
     "resolve-url-loader": "2.3.0",
     "style-loader": "0.23.0",
     "stylelint": "9.5.0",
