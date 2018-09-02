@@ -1,13 +1,12 @@
 const path = require('path');
 const webpack = require('webpack');
 const merge = require('webpack-merge');
-const base = require('./webpack.base.conf');
-const autoprefixer = require('autoprefixer');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const OfflinePlugin = require('offline-plugin');
+const base = require('./webpack.base.conf');
 
 module.exports = merge(base, {
   mode   : 'production',
@@ -18,7 +17,7 @@ module.exports = merge(base, {
   },
   module: {
     rules: [{
-      test : /(\.scss|\.css)$/,
+      test : /(\.css|\.pcss)$/,
       use  : ExtractTextPlugin.extract({
         use: [
           {
@@ -36,7 +35,7 @@ module.exports = merge(base, {
           {
             loader  : 'postcss-loader', // postprocesses CSS
             options : {
-              sourceMap : true,
+              sourceMap : false,
               ident     : 'postcss'
             }
           }
@@ -45,7 +44,7 @@ module.exports = merge(base, {
     }]
   },
   plugins: [
-    new CleanWebpackPlugin(['dist'], {verbose: false}),
+    new CleanWebpackPlugin(['dist'], { verbose: false }),
     new ExtractTextPlugin({
       filename : '[chunkhash].app.css',
       disable  : false

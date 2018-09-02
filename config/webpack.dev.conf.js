@@ -1,9 +1,8 @@
 const webpack = require('webpack');
 const merge = require('webpack-merge');
-const base = require('./webpack.base.conf');
-const autoprefixer = require('autoprefixer');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const base = require('./webpack.base.conf');
 
 const TITLE = 'DEV - ';
 
