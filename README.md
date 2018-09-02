@@ -76,7 +76,7 @@ $ yarn httpserver
 * [Flow](https://flow.org/)
 * [EsLint](https://eslint.org/docs/user-guide/getting-started)
 * [StyleLint](https://github.com/stylelint/stylelint)
-* [Sass](https://github.com/webpack-contrib/sass-loader)
+* [Postcss](https://github.com/postcss/postcss)
 * [Autoprefixer](https://github.com/postcss/autoprefixer)
 * [Ava](https://github.com/avajs/ava)
 * [nyc](https://github.com/istanbuljs/nyc)
