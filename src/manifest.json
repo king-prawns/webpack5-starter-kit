@@ -1,6 +1,6 @@
 {
   "name": "webpack4-starter-kit",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "short_name": "w4kit",
   "start_url": "/",
   "display": "standalone",
