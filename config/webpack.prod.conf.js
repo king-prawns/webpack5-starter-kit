@@ -19,6 +19,10 @@ module.exports = merge(base, {
     filename   : '[chunkhash].app.js'
   },
   optimization: {
+    splitChunks: {
+      // include all types of chunks
+      chunks: 'all'
+    },
     minimizer: [
       new TerserPlugin({
         cache     : true,
