@@ -7,7 +7,7 @@ module.exports = {
     },
     'postcss-responsive-type' : {},
     'postcss-preset-env'      : {
-      browsers     : '> 0.25%, not dead',
+      browsers     : '> 0.25%, not dead, not ie 11',
       stage        : 0,
       autoprefixer : {
         grid: true
