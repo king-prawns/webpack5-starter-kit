@@ -15,11 +15,13 @@ Webpack 4 with webpack-dev-server configuration (and Web Components).
 npm install -g w4kit-cli
 ```
 
-  * launch the CLI
+  * Launch the CLI
 
 ```
 w4kit
 ```
+
+  * Choose `Vanilla JS`
 
 ## Installation via Clone
 
@@ -86,4 +88,4 @@ $ yarn httpserver
 
 ## TypeScript
 
-### PLEASE GO TO [TS BRANCH](https://github.com/king-prawns/webpack4-starter-kit/tree/typescript)
+### PLEASE GO TO [TS REPO](https://github.com/king-prawns/webpack4-starter-kit-ts)
