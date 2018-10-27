@@ -10,6 +10,8 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const OfflinePlugin = require('offline-plugin');
 const base = require('./webpack.base.conf');
 
+const TITLE = 'PROD - ';
+
 module.exports = merge(base, {
   mode   : 'production',
   // devtool : 'source-map', // remove this comment if you want JS source maps
@@ -77,6 +79,7 @@ module.exports = merge(base, {
       filename : path.resolve(__dirname, '../dist/index.html'),
       template : 'src/index.ejs',
       favicon  : 'favicon.ico', // or use favicons-webpack-plugin
+      title    : TITLE,
       minify   : {
         removeComments        : true,
         collapseWhitespace    : true,
