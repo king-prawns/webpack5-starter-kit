@@ -88,4 +88,4 @@ $ yarn httpserver
 
 ## TypeScript
 
-### PLEASE GO TO [TS REPO](https://github.com/king-prawns/webpack4-starter-kit-ts)
+### Please go to [TS repo](https://github.com/king-prawns/webpack4-starter-kit-ts)
