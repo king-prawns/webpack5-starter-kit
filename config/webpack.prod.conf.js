@@ -51,7 +51,6 @@ module.exports = merge(base, {
         {
           loader  : 'css-loader', // translates CSS into CommonJS
           options : {
-            minimize      : true,
             sourceMap     : true,
             importLoaders : 2
           }
