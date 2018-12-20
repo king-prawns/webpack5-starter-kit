@@ -12,12 +12,12 @@
     "prehttpserver": "yarn build",
     "httpserver": "http-server ./dist -p 8082 --silent"
   },
-  "author": "Giorgio Gamberoni <giorgio.gamberoni@gmail.com> (https://github.com/king-prawns)",
+  "author": "Jason Schneider (https://github.com/schnjaso2)",
   "license": "MIT",
-  "homepage": "https://github.com/king-prawns/webpack4-starter-kit#readme",
+  "homepage": "https://github.com/schnjaso2/webpack4-starter-kit",
   "ava": {
     "files": [
-      "./src/**/*test.js"
+      "./src/manifest.json"
     ],
     "failFast": true,
     "failWithoutAssertions": false,
