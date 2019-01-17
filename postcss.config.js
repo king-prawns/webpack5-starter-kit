@@ -14,7 +14,7 @@ module.exports = {
       }
     },
     cssnano: {
-      preset: 'advanced'
+      preset: ['advanced', { zindex: false }]
     },
     'postcss-reporter': {
       clearReportedMessages: true
