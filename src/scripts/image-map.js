@@ -1,5 +1,4 @@
 
-    <script>
     // Using leaflet.js to pan and zoom a big image.
     // See also: http://kempe.net/blog/2014/06/14/leaflet-pan-zoom-image.html
     // create the slippy map

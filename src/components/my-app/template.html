@@ -5,13 +5,44 @@
   <meta charset='utf-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link rel='shortcut icon' href='Your favicon path goes here' type='image/x-icon'>
-  <link href='https://api.mapbox.com/mapbox-assembly/v0.23.1/assembly.min.css' rel='stylesheet'>
+
   <script async defer src='https://api.mapbox.com/mapbox-assembly/v0.23.1/assembly.js'></script>
+  <script><link href='https://api.mapbox.com/mapbox-assembly/v0.23.1/assembly.min.css' rel='stylesheet'></script>
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"></script>
+  <script src="scripts/lib/fontsawesome/e2338abaf7.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+      <!-- Load Leaflet from CDN-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.1.0/dist/leaflet.css"></html></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet-src.js"></script>
+      <!-- Load Esri Leaflet from CDN -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/esri-leaflet/2.2.3/esri-leaflet-debug.js"></script>
+      <!-- Esri Leaflet Geocoder -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/esri-leaflet-geocoder/2.2.13/esri-leaflet-geocoder.css"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/esri-leaflet-geocoder/2.2.13/esri-leaflet-geocoder-debug.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.1/d3.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.1/d3.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/esri-leaflet/2.2.3/esri-leaflet.js"></script>
+      <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+
 </head>
 <body>
   <!-- Your page... -->
-  <div class='w240 round shadow-darken10 px12 py12 txt-s'>
-  <strong class='block mb6'>Title description</strong>
+  <div class='.viewport-half round  px36 py36 txt-s animation-shake animation--infinite cursor-crosshair'>
+  <strong class='prose align-c'><h5>Jason Schneider</h5>
+    </strong></div>
+    <div id="image-map"></div>
+
+
+
+
+  <div id='overview'></div>
+
+
+    <div>
+
+      </div>
+
+
   <div class='grid mb6'>
     <div class='col bg-blue-faint h12'></div>
     <div class='col bg-blue-light h12'></div>
@@ -27,16 +58,16 @@
     <div class='col flex-child--grow align-r'>High</div>
   </div>
 </div>
-<div class='w240 round shadow-darken10 px12 py12 txt-s'>
+<div class='w240 round shadow-darken10 px12 py12 txt-s animation-shake animation--infinite animation--delay animation--speed-4'>
   <strong class='block mb6'>Title description</strong>
   <div class='grid mb6'>
-    <div class='col bg-green-faint h12'></div>
+    <div class='col bg-green-faint h12 triangle--u triangle color-blue inline-block'></div>
     <div class='col bg-green-light h12'></div>
     <div class='col bg-green h12'></div>
     <div class='col bg-green-dark h12'></div>
   </div>
   <div class='grid txt-xs'>
-    <div class='col al<div class='w240 round shadow-darken10 px12 py12 txt-s'>
+    <div class='col al'<div class='w240 round shadow-darken10 px12 py12 txt-s'>
   <strong class='block mb6'>Title description</strong>
   <div class='flex-parent flex-parent--center-main flex-parent--center-cross align-center'>
     <div class='flex-child flex-child--grow wmin24'>
@@ -67,12 +98,14 @@
     <div class='col align-center'>50</div>
     <div class='col align-center'>75</div>
   </div>
-</div>
+
 
 <div class='triangle--u triangle color-blue inline-block'></div>
 <div class='triangle--r triangle color-green inline-block'></div>
 <div class='triangle--d triangle color-orange inline-block animation-spin animation--infinite'></div>
 <div class='triangle--l triangle color-pink inline-block'></div>
 <div class="bg-blue inline-block mr18 w60 h60 round animation-spin animation--infinite"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.EasyButton/2.4.0/easy-button.js"></script>
+<script src="src/scripts/overview.js"></script>
 </body>
 </html>
