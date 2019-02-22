@@ -13,7 +13,7 @@
     // dimensions of the image
     var w = 645,
         h = 430,
-        url = 'https://www.dropbox.com/s/op0iumht5gtucao/fa18training.jpg?dl=0';
+        url = 'src/assets/images/fa18training.jpg';
     // calculate the edges of the image, in coordinate space
     var southWest = map.unproject([0, h], map.getMaxZoom()-1);
     var northEast = map.unproject([w, 0], map.getMaxZoom()-1);
