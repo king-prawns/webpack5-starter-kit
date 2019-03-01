@@ -8,19 +8,14 @@
    This code is free to use with proper credit given
    if this code is being used to make profit then please
    be sure to buy the required FancyBox license
-
-   NOTE: the code for this is the same as every other html
-         file (except for the about page) the only difference
-         are the images (you will use your own images and 
-         add them to the src tag).
 -->
 <html>
     <head>
-        <title>Akash Rai Chhabria</title>
+        <title>About/Contact - Akash Rai Chhabria</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--Integration of CSS file "main.css-->
-        <link href="main.css" rel="stylesheet" type="text/css"/>
+        <!--Integration of CSS file "AboutStyle.css-->
+        <link href="AboutStyle.css" rel="stylesheet" type="text/css"/>
         <!--Integration of JQuery -->
         <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
         <!--Integration of FancyBox (makes pictures look good when clicked)-->
@@ -33,7 +28,7 @@
         
         <!--Side Navigation content-->
         
-        <nav>    
+        <nav>
             <!--Side navigation button (only enabled in mobile or tablet mode)-->
             <a href="#" class="nav-toggle-btn"></a>
             <!--Side navigation Menu-->
@@ -59,41 +54,34 @@
                 </ul>
             </div>
             
-        </nav>
+        </nav> 
         
-         <!--photography pictures-->
+        <!--About and Contact text and pictures-->
         
        <div id="main" class="content">
-            <a href="Featured/Featured_1.jpg" data-caption="" data-fancybox="image"><img src="Featured/Featured_1.jpg" alt=""/></a>
-            <a href="Featured/Featured_2.jpg" data-caption="" data-fancybox="image"><img src="Featured/Featured_2.jpg" alt=""/></a>
-            <a href="Featured/Featured_3.jpg" data-caption="" data-fancybox="image"><img src="Featured/Featured_3.jpg" alt=""/></a>
-            <a href="Featured/Featured_4.jpg" data-caption="" data-fancybox="image"><img src="Featured/Featured_4.jpg" alt=""/></a>
-            <a href="Featured/Featured_5.jpg" data-caption="" data-fancybox="image"><img src="Featured/Featured_5.jpg" alt=""/></a>
-            <a href="Featured/Featured_6.jpg" data-caption="" data-fancybox="image"><img src="Featured/Featured_6.jpg" alt=""/></a>
-            <a href="Featured/Featured_7.jpg" data-caption="" data-fancybox="image"><img src="Featured/Featured_7.jpg" alt=""/></a>
-            <a href="Featured/Featured_8.jpg" data-caption="" data-fancybox="image"><img src="Featured/Featured_8.jpg" alt=""/></a>
-            <a href="Featured/Featured_9.jpg" data-caption="" data-fancybox="image"><img src="Featured/Featured_9.jpg" alt=""/></a>
-            <a href="Featured/Featured_10.jpg" data-caption="" data-fancybox="image"><img src="Featured/Featured_10.jpg" alt=""/></a>
-            <a href="Featured/Featured_11.jpg" data-caption="" data-fancybox="image"><img src="Featured/Featured_11.jpg" alt=""/></a>
-            <a href="Featured/Featured_12.jpg" data-caption="" data-fancybox="image"><img src="Featured/Featured_12.jpg" alt=""/></a>
-            <a href="Featured/Featured_13.jpg" data-caption="" data-fancybox="image"><img src="Featured/Featured_13.jpg" alt=""/></a>
-            <a href="Featured/Featured_14.jpg" data-caption="" data-fancybox="image"><img src="Featured/Featured_14.jpg" alt=""/></a>
-            <a href="Featured/Featured_15.jpg" data-caption="" data-fancybox="image"><img src="Featured/Featured_15.jpg" alt=""/></a>
-            <a href="Featured/Featured_16.jpg" data-caption="" data-fancybox="image"><img src="Featured/Featured_16.jpg" alt=""/></a>
+           <h1 class="About"> About and Contact </h1>
+           <p class="para"> My name is Akash Rai, I am a first year Computer Science major at Ryerson University. I made this Photography Portfolio 
+           not only for the purpose of having a portfolio but also as a Computer Science Project. <br>I used HTML, CSS and JavaScript/JQuery to make this.
+           I have seriously been pursuing photography for around 6 months now and I created this portfolio to display all the different types of photos I
+           have taken in this short Period of time. Some other things that I am in interested in include Soccer and Music (I sing some cover songs, so you can
+           check out some of my music <a href="https://www.youtube.com/channel/UCa-e3Ub6jzb-Xm31Usr4a3Q" target="_blank">here</a>).<br> If you wish to contact me to shoot, play some 
+           music, help you build your own photography portfolio, or just to chill, then you can do so using Instagram or you can contact me by <a href="mailto:akashrai10.ar10@gmail.com" target="_blank">email.</a> </p>
+           <a href="About/IMGP1321.jpg" data-caption="Picture taken by @yoodani, check him out on Instagram"  data-fancybox="image"><img src="About/IMGP1321.jpg" alt=""/></a>
+            <a href="About/IMGP1071.jpg" data-caption="@yoodani" data-fancybox="image"><img src="About/IMGP1071.jpg" alt=""/></a>
+            <a href="About/IMGP1178.jpg" data-caption="@yoodani" data-fancybox="image"><img src="About/IMGP1178.jpg" alt=""/></a>
         </div>
         
-        <script src="jquery-3.2.1.min.js" type="text/javascript"></script>        
+        <script src="jquery-3.2.1.min.js" type="text/javascript"></script> 
         <script src="jquery.fancybox.min.js" type="text/javascript"></script>
         <!--Google analytics integration-->
         <script src="GoogleAnalytics.js" type="text/javascript"></script>
-       
+        
         <!--Code to make the side navigation button slide out when clicked 
         and also contain the content  of the navigation menu and also sets up
         fancybox (you can use to the fancybox API to change the functionality however
         you like--> 
-        
         <script type="text/javascript">
-              
+     
         (function() {
             
             var bodyEl = $('body'),
@@ -105,12 +93,16 @@
             });
             
         })();
-        
-            $(document).ready(function ()
-            {
-            });
-        
+
+           $(document).ready(function() {
+            $('.fancybox').fancybox({
+                beforeShow : function(){
+                    this.title =  $(this.element).data("caption");
+                    }
+                        });
+                                })
     </script>
-   
+    
     </body>
+    
 </html>

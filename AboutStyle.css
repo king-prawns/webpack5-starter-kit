@@ -1,0 +1,382 @@
+/* 
+ * Created on : 11-May-2017, 8:41:30 PM
+ * Author     : Akash Rai Chhabria
+ */
+
+/* 
+ * This code is free to use with proper credit given
+ * if this code is being used to make profit then please
+ * be sure to buy the required FancyBox license
+ */
+
+/*
+ * Affects the entire body
+ * Makes sure there is no horiszontal overflow
+ * Makes sure the bankground is black
+ * Sets the font family
+ * sets the margin adn padding as zero
+ * text colour = white
+ */
+
+body
+{
+    overflow-x: hidden;
+    background-color: #111;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+/* Affects the side navigation
+ * Makes sure the position is fixed
+ * Makes sure its height extends to a 100% of the page
+ * sets the margins and alginment as 0
+ * sets the width to 15.625% of the page
+ * sets the z-index to make sure the nav bar is ahead on the page and the content is behind
+ * aligns the text to the left and displays its contents vertically
+ * allows smooth transition of the nav menu when the nav button is clicked
+ */
+
+nav
+{
+    position: fixed;
+    z-index: 1;
+    height:100%;
+    top: 0;
+    bottom:0;
+    left: 0;
+    margin-right: 0;
+    width: 15.625%;
+    background-color: #111;
+    display: inline-block;
+    text-align: left;
+    transition: transform 0.4s ease; 
+    
+}
+
+/* Affects the the contents of the side navigation
+ * algins and sets the margin to 10px
+ */
+
+nav ul
+{
+   list-style: none;
+   margin-top: 10px;
+   display: inline-block;
+   text-align:left;
+}
+
+/* Affects every link in the menu bar
+ * Creates space between each link
+ * removes its link properties by chaning colour and removing text decoration
+ * increases font size
+ * allows for a smooth transition of each link when the button is clicked
+ */
+
+nav ul li a
+{
+    padding-top: 7%;
+    padding-bottom: 7%;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+    text-align:left;
+}
+
+/* Affects every link in the menu bar when the mouse hovers over it
+ * changes the colour to grey
+ */
+
+nav ul li a:hover, .offcanvas a:focus
+{
+    color: #666;
+}
+
+/* Affects the link property of the heading of the nav bar
+ * removes its link properties by chaning colour and removing text decoration
+ */
+
+h1 a
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Affects heading of the nav bar
+ * creates a larger amount of space between the title and the rest of its content
+ * alligns the text to the center of the nav bar
+ */
+
+h1
+{
+    padding: 15% 15% 5% 5%;
+    text-align: center;  
+}
+
+/* Affects the info class and its content (in this case, the about/content text)
+ * brings the text the bottom and aligns in accordance to the side nav
+ */
+
+.info h5 
+{
+    padding-left: 14%;
+    padding-top: 88%;
+    height: 1px;
+    margin-bottom: 4%;
+}
+
+/* Affects the info class and its content (in this case, the about/content link)
+ * removes its link properties by changin colour and removing decoration
+ * creates transition effect for side nav button
+ */
+
+.info h5 a
+{
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+/* Affects the info class and its content (in this case, the about/content text) only on hover
+ * changes the text from white to grey
+ */
+
+.info h5 a:hover, .offcanvas a:focus
+{
+    color: #666;
+}
+
+/* Affects all the social media buttons
+ * Creates space from the left of the page in the nav bar
+ */
+
+.socialbtn ul
+{
+    padding-left: 21%;
+}
+
+/* Affects each social media button
+ * displays it as inline-block and changes the colour to white
+ */
+
+.socialbtn ul li
+{
+    display: inline-block;
+    color: #fff;
+}
+
+/* Affects the header of the about page
+ * creates a bit of space between the header and the actual content
+ */
+
+.About
+{
+    padding-bottom: 0.2%;
+    padding-top: 0;
+}
+
+/* Affects the para class which contains the text in the content of the about page
+ * Creates space from the left of the nav bar
+ * Creates space from the right of the page
+ * creates a margin from the top of the page
+ */
+
+.para
+{
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: left;
+    padding-bottom: 5%;
+    padding-top: 0;
+    margin-top: 5%;
+}
+
+/* Affects the toggle button for the side nav menu
+ * makes sure it doesn't display if the screen isn't a certain size
+ */
+
+.nav-toggle-btn
+{
+    display: none;
+}
+
+/* Affects the images on the page
+ * creates space between each image
+ * displays only a certain percentage of the images actual dimensions in order to attain a thumbnail effect
+ */
+
+img
+{
+    padding-top: 0.2%;
+    padding-left: 5%;
+    width: 26.63%;
+    height: 19.53%;
+    display: inline-block;
+    margin: auto;
+    transition: transform .2s ease-in-out;
+}
+
+/* Affects the content of the page 
+ * creates sace between the content and the side nav and header
+ */
+
+.content
+{
+    padding-left: 15.625%;
+    padding-top: 4%;
+}
+
+/* Affects the image when the mouse pointer is hovering over the image
+ * increases the image size by 0.05 and creates a cool effect
+ */
+
+a:hover img 
+{
+  transform: scale(1.05);
+}
+
+/* 
+ * changes the layout of the page if the max-width is 50 em
+ */
+
+@media screen and (max-width: 50em)
+{
+    nav 
+    {
+        padding-top: 7px;
+        transform: translate3d(-200px, 0, 0); 
+        transition: transform 0.4s ease;
+    }
+    nav h1
+    {
+        text-align: center;
+        padding-left: 50%;
+        display: inline-block;
+    }
+    nav ul
+    {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    nav ul li a 
+    {
+        float: none;
+        padding: 10%;
+        text-align: center;
+    }
+    
+    .info h5 
+    {
+        padding-left: 45%;
+        padding-top: 33%;
+    }
+
+    
+    .socialbtn ul
+    {
+        padding-left: 55%;
+    }
+    
+    .para
+    {
+        padding-top: 5%;
+        padding-bottom: 2%;
+    }
+    
+    img
+    {
+        padding-top: 3%;
+        padding-bottom: 1.5%;
+        width: 90%;
+        height: 80%;
+        display: inline-block;
+        margin: auto;
+        transition: transform 0.4s ease;
+    }
+    
+    /*
+     * creates a grey color nav toggle button (for tablets)
+     */
+    
+   
+    .nav-toggle-btn
+    {
+        display: block;
+        text-align: center;
+        position: absolute;
+        left: 200px;
+        top: 0px;
+        width: 40px;
+        height: 40px;
+        background-color: #666;
+    }
+    
+    .active-nav nav
+    {
+        transform: translate3d(0,0,0);
+    }
+    
+    .active-nav .content
+    {
+        transform: translate3d(200px, 0, 0);
+    }
+    
+    #main 
+    {
+        transition: margin-left .5s;
+        /* padding: 20px; */
+    }
+    
+    /*
+     * changes the layout of the page if the max width is 480 px (for cell phones)
+     */
+    
+    
+    @media screen and (max-width: 480px)
+    {
+        nav ul li a 
+        {
+            padding-bottom: 0.1%;
+        }
+        
+        h1
+        {
+            margin-top: 1%;
+            margin-bottom: 15%;
+            height: 1px;
+            margin-left: 15px;
+        }
+        
+        .info h5 
+        {
+            padding-top: 350%;
+            height: 1px;
+            margin-top: 0.1px;
+            padding-bottom: 5%;
+            margin-left: 25%;
+        }
+        
+        .socialbtn ul
+        {
+            left: 15%;
+            display: flex;
+            margin-left: 25%;
+        }
+        
+        .socialbtn ul li
+        {
+            padding-left: 5%;
+        }
+        
+        .para
+        {
+            padding-top: 10%;
+        }
+        
+    }
+}
+
