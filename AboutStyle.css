@@ -1,9 +1,9 @@
-/* 
+/*
  * Created on : 11-May-2017, 8:41:30 PM
  * Author     : Akash Rai Chhabria
  */
 
-/* 
+/*
  * This code is free to use with proper credit given
  * if this code is being used to make profit then please
  * be sure to buy the required FancyBox license
@@ -51,8 +51,8 @@ nav
     background-color: #111;
     display: inline-block;
     text-align: left;
-    transition: transform 0.4s ease; 
-    
+    transition: transform 0.4s ease;
+
 }
 
 /* Affects the the contents of the side navigation
@@ -113,14 +113,14 @@ h1 a
 h1
 {
     padding: 15% 15% 5% 5%;
-    text-align: center;  
+    text-align: center;
 }
 
 /* Affects the info class and its content (in this case, the about/content text)
  * brings the text the bottom and aligns in accordance to the side nav
  */
 
-.info h5 
+.info h5
 {
     padding-left: 14%;
     padding-top: 88%;
@@ -219,7 +219,7 @@ img
     transition: transform .2s ease-in-out;
 }
 
-/* Affects the content of the page 
+/* Affects the content of the page
  * creates sace between the content and the side nav and header
  */
 
@@ -233,21 +233,22 @@ img
  * increases the image size by 0.05 and creates a cool effect
  */
 
-a:hover img 
+a:hover img
 {
   transform: scale(1.05);
+  opacity: .7;
 }
 
-/* 
+/*
  * changes the layout of the page if the max-width is 50 em
  */
 
 @media screen and (max-width: 50em)
 {
-    nav 
+    nav
     {
         padding-top: 7px;
-        transform: translate3d(-200px, 0, 0); 
+        transform: translate3d(-200px, 0, 0);
         transition: transform 0.4s ease;
     }
     nav h1
@@ -262,31 +263,31 @@ a:hover img
         height: auto;
         position: relative;
     }
-    nav ul li a 
+    nav ul li a
     {
         float: none;
         padding: 10%;
         text-align: center;
     }
-    
-    .info h5 
+
+    .info h5
     {
         padding-left: 45%;
         padding-top: 33%;
     }
 
-    
+
     .socialbtn ul
     {
         padding-left: 55%;
     }
-    
+
     .para
     {
         padding-top: 5%;
         padding-bottom: 2%;
     }
-    
+
     img
     {
         padding-top: 3%;
@@ -297,12 +298,12 @@ a:hover img
         margin: auto;
         transition: transform 0.4s ease;
     }
-    
+
     /*
      * creates a grey color nav toggle button (for tablets)
      */
-    
-   
+
+
     .nav-toggle-btn
     {
         display: block;
@@ -314,35 +315,35 @@ a:hover img
         height: 40px;
         background-color: #666;
     }
-    
+
     .active-nav nav
     {
         transform: translate3d(0,0,0);
     }
-    
+
     .active-nav .content
     {
         transform: translate3d(200px, 0, 0);
     }
-    
-    #main 
+
+    #main
     {
         transition: margin-left .5s;
         /* padding: 20px; */
     }
-    
+
     /*
      * changes the layout of the page if the max width is 480 px (for cell phones)
      */
-    
-    
+
+
     @media screen and (max-width: 480px)
     {
-        nav ul li a 
+        nav ul li a
         {
             padding-bottom: 0.1%;
         }
-        
+
         h1
         {
             margin-top: 1%;
@@ -350,8 +351,8 @@ a:hover img
             height: 1px;
             margin-left: 15px;
         }
-        
-        .info h5 
+
+        .info h5
         {
             padding-top: 350%;
             height: 1px;
@@ -359,24 +360,24 @@ a:hover img
             padding-bottom: 5%;
             margin-left: 25%;
         }
-        
+
         .socialbtn ul
         {
             left: 15%;
             display: flex;
             margin-left: 25%;
         }
-        
+
         .socialbtn ul li
         {
             padding-left: 5%;
         }
-        
+
         .para
         {
             padding-top: 10%;
         }
-        
+
     }
 }
 

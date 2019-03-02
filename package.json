@@ -1,81 +1,45 @@
 {
-  "name": "webpack4-starter-kit",
-  "version": "1.0.5",
-  "description": "Webpack 4 starter kit",
-  "main": "./src/index.js",
+  "author": "Mapbox",
+  "name": "@mapbox/maki",
+  "description": "Pixel-perfect icons for web cartography",
+  "version": "6.1.0",
+  "main": "index.js",
   "scripts": {
-    "dev": "node ./config/dev",
-    "build": "node ./config/prod",
-    "lint": "eslint ./src",
-    "flow": "flow",
-    "test": "nyc ava",
-    "prehttpserver": "yarn build",
-    "httpserver": "http-server ./dist -p 8082 --silent"
-  },
-  "author": "Jason Schneider (https://github.com/schnjaso2)",
-  "license": "MIT",
-  "homepage": "https://github.com/schnjaso2/webpack4-starter-kit",
-  "ava": {
-    "files": [
-      "./src/manifest.json"
-    ],
-    "failFast": true,
-    "failWithoutAssertions": false,
-    "require": [
-      "@babel/register"
-    ]
+    "test": "tape test/maki.test.js | tap-spec",
+    "build": "node scripts/make-layouts.js && node scripts/format-icons.js"
   },
   "devDependencies": {
-    "@babel/core": "7.2.2",
-    "@babel/plugin-transform-runtime": "7.2.0",
-    "@babel/preset-env": "7.2.0",
-    "@babel/preset-flow": "7.0.0",
-    "@babel/register": "7.0.0",
-    "@babel/runtime": "7.2.0",
-    "autoprefixer": "9.4.2",
-    "ava": "1.0.0-beta.8",
-    "babel-eslint": "10.0.1",
-    "babel-loader": "8.0.4",
-    "chalk": "2.4.1",
-    "clean-webpack-plugin": "1.0.0",
-    "copy-webpack-plugin": "4.6.0",
-    "css-loader": "2.0.1",
-    "cssnano": "4.1.7",
-    "cssnano-preset-advanced": "4.0.5",
-    "eslint": "5.10.0",
-    "eslint-config-airbnb-base": "13.1.0",
-    "eslint-loader": "2.1.1",
-    "eslint-plugin-flowtype": "3.2.0",
-    "eslint-plugin-import": "2.14.0",
-    "file-loader": "2.0.0",
-    "flow-bin": "0.89.0",
-    "fs-extra": "7.0.1",
-    "html-loader": "0.5.5",
-    "html-webpack-plugin": "3.2.0",
-    "http-server": "0.11.1",
-    "mini-css-extract-plugin": "0.5.0",
-    "nyc": "13.1.0",
-    "offline-plugin": "5.0.6",
-    "opn": "5.4.0",
-    "optimize-css-assets-webpack-plugin": "5.0.1",
-    "ora": "3.0.0",
-    "postcss-easy-import": "3.0.0",
-    "postcss-load-config": "2.0.0",
-    "postcss-loader": "3.0.0",
-    "postcss-preset-env": "6.5.0",
-    "postcss-reporter": "6.0.0",
-    "postcss-responsive-type": "1.0.0",
-    "resolve-url-loader": "3.0.0",
-    "style-loader": "0.23.1",
-    "stylelint": "9.9.0",
-    "stylelint-config-standard": "18.2.0",
-    "stylelint-webpack-plugin": "0.10.5",
-    "terser-webpack-plugin": "1.1.0",
-    "url-loader": "1.1.2",
-    "webpack": "4.27.1",
-    "webpack-cli": "3.1.2",
-    "webpack-dev-server": "3.1.10",
-    "webpack-merge": "4.1.5"
+    "@mapbox/style-components": "^0.7.0",
+    "eslint": "^5.6.0",
+    "husky": "^1.0.0",
+    "mkdirp": "^0.5.1",
+    "pify": "^4.0.1",
+    "prettier": "^1.14.3",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.2.2",
+    "xml2js": "^0.4.19"
   },
-  "dependencies": {}
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mapbox/maki"
+  },
+  "keywords": [
+    "map",
+    "icon",
+    "poi",
+    "svg"
+  ],
+  "license": "CC0",
+  "bugs": {
+    "url": "https://github.com/mapbox/maki/issues"
+  },
+  "homepage": "https://github.com/mapbox/maki",
+  "husky": {
+    "hooks": {
+      "pre-commit": "eslint ./scripts/* && prettier --write ./scripts/* && npm run build && git add ."
+    }
+  },
+  "prettier": {
+    "singleQuote": true
+  }
 }
