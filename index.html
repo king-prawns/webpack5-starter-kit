@@ -121,20 +121,7 @@ svg.append("path")
     .attr("clip-path", "url(#clip)")
     .attr("d", path);
 
-d3.json(("https://unpkg.com/world-atlas@1.1.4/world/110m.json", function(error, world) {
-  if (error) throw error;
-
-  svg.insert("path", ".graticule")
-      .datum(topojson.feature(world, world.objects.land))
-      .attr("class", "land")
-      .attr("clip-path", "url(#clip)")
-      .attr("d", path);
-
-  svg.insert("path", ".graticule")
-      .datum(topojson.mesh(world, world.objects.countries, function(a, b) { return a !== b; }))
-      .attr("class", "boundary")
-      .attr("clip-path", "url(#clip)")
-      .attr("d", path);
+d3.json(("https://unpkg.com/world-atlas@1.1.4/world/110m.json", drawmap));
 });
 
 </script>
