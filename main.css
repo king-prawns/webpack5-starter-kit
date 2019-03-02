@@ -46,7 +46,7 @@ nav
     bottom:0;
     left: 0;
     margin-right: 0;
-    width: 15.625%;
+    width: 11.333%;
     background-color: #111;
     display: inline-block;
     text-align: left;
@@ -76,9 +76,9 @@ nav ul
 
 nav ul li a
 {
-    padding-top: 7%;
-    padding-bottom: 7%;
-    text-decoration: none;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-decoration: italic;
     font-size: 20px;
     color: #ffffff;
     display: block;
@@ -101,7 +101,7 @@ nav ul li a:hover, .offcanvas a:focus
 
 h1 a
 {
-    text-decoration: none;
+    text-decoration: italic;
     color: #fff;
 }
 
