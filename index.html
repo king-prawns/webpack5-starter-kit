@@ -121,7 +121,7 @@ svg.append("path")
     .attr("clip-path", "url(#clip)")
     .attr("d", path);
 
-d3.json("world-50m.json", function(error, world) {
+d3.json(world_50m.json, function(error, world) {
   if (error) throw error;
 
   svg.insert("path", ".graticule")
