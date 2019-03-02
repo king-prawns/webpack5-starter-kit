@@ -78,7 +78,7 @@ nav ul li a
 {
     padding-top: 5%;
     padding-bottom: 5%;
-    text-decoration: italic;
+    text-decoration: none;
     font-size: 20px;
     color: #ffffff;
     display: block;
@@ -101,7 +101,7 @@ nav ul li a:hover, .offcanvas a:focus
 
 h1 a
 {
-    text-decoration: italic;
+    text-decoration: none;
     color: #fff;
 }
 
