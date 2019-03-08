@@ -27,7 +27,7 @@
         <link href="jquery.fancybox.min.css" rel="stylesheet" type="text/css"/>
         <!--Integration of Instagram, Facebook, and GitHub icons-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script type='text/javascript' id='lt_ws' src='http://localhost:5678/socket.io/lighttable/ws.js'></script>
+
     </head>
 
     <body>
@@ -66,41 +66,36 @@
 <script src="//d3js.org/d3.v4.min.js"></script>
 <script src="//d3js.org/d3-geo-projection.v1.min.js"></script>
 <script src="//d3js.org/topojson.v1.min.js"></script>
-<script>
+<div id="map-holder"></div>
+    <script type="text/javascript">
 
-var svg = d3
-        .select("#svg")
-        .append("svg")
-        // set to the same size as the "map-holder" div
-        .attr("width", $("#svg").width())
-        .attr("height", $("#svg").height())
-        // add zoom functionality
-        .call(zoom)
+      // DEFINE VARIABLES
+      // Define size of map group
+      // Full world map is 2:1 ratio
+      // Using 12:5 because we will crop top and bottom of map
+      w = 3000;
+      h = 1250;
+      // variables for catching min and max zoom factors
+      var minZoom;
+      var maxZoom;
+
+      // DEFINE FUNCTIONS/OBJECTS
+      // Define map projection
+      var projection = d3
+        .geoEquirectangular()
+        .center([0, 15]) // set centre to further North as we are cropping more off bottom of map
+        .scale([w / (2 * Math.PI)]) // scale to fit group width
+        .translate([w / 2, h / 2]) // ensure centred in group
       ;
 
-var projection = d3.geoInterrupt(d3.geoSinusoidalRaw,
-      [[ // northern hemisphere
-        [[-180,   0], [-120,  90], [ -60,   0]],
-        [[ -60,   0], [   0,  90], [  60,   0]],
-        [[  60,   0], [ 120,  90], [ 180,   0]]
-      ], [ // southern hemisphere
-        [[-180,   0], [-180, -90], [ -120,  0]],
-        [[-120,   0], [ -60, -90], [   0,   0]],
-        [[   0,   0], [  60, -90], [ 120,   0]],
-        [[ 120,   0], [ 180, -90], [ 180,   0]]
-      ]])
-    .rotate([101, -11])
-    .scale(152)
-    .translate([width / 2, height / 2])
-    .precision(0.000001);
+      // Define map path
+      var path = d3
+        .geoPath()
+        .projection(projection)
+      ;
 
-var graticule = d3.geoGraticule();
-
-// apply zoom to countriesGroup
-
-
-// Define map zoom behaviour
-function zoomed() {
+      // Create function to apply zoom to countriesGroup
+      function zoomed() {
         t = d3
           .event
           .transform
@@ -192,47 +187,26 @@ function zoomed() {
       $(window).resize(function() {
         // Resize SVG
         svg
-          .attr("width", $("#svg").width())
-          .attr("height", $("#svg").height())
+          .attr("width", $("#map-holder").width())
+          .attr("height", $("#map-holder").height())
         ;
         initiateZoom();
       });
 
       // create an SVG
+      var svg = d3
+        .select("#map-holder")
+        .append("svg")
+        // set to the same size as the "map-holder" div
+        .attr("width", $("#map-holder").width())
+        .attr("height", $("#map-holder").height())
+        // add zoom functionality
+        .call(zoom)
+      ;
 
 
-var path = d3.geoPath()
-    .projection(projection);
-
-var defs = svg.append("defs");
-
-defs.append("path")
-    .datum({type: "Sphere"})
-    .attr("id", "sphere")
-    .attr("d", path);
-
-defs.append("clipPath")
-    .attr("id", "clip")
-  .append("use")
-    .attr("xlink:href", "#sphere");
-
-svg.append("use")
-    .attr("class", "stroke")
-    .attr("xlink:href", "#sphere");
-
-svg.append("use")
-    .attr("class", "fill")
-    .attr("xlink:href", "#sphere");
-
-svg.append("path")
-    .datum(graticule)
-    .attr("class", "graticule")
-    .attr("clip-path", "url(#clip)")
-    .attr("d", path);
-
-
-
-d3.json(
+      // get map data
+      d3.json(
         "https://raw.githubusercontent.com/andybarefoot/andybarefoot-www/master/maps/mapdata/custom50.json",
         function(json) {
           //Bind data and create one path per GeoJSON feature
@@ -328,12 +302,7 @@ d3.json(
         }
       );
 
-
-
-
-});
-
-</script>
+    </script>
 
 
         <!--Side Navigation content-->
