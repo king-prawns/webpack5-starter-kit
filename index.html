@@ -123,7 +123,7 @@ svg.append("path")
 
 
 
-d3.json("https://gist.githubusercontent.com/gorbiz/8271778/raw/59131784976eff93f5897fe92308402196e5ba34/world-50m.json", function(error, images) {
+d3.json("https://gist.githubusercontent.com/gorbiz/8271778/raw/59131784976eff93f5897fe92308402196e5ba34/world-50m.json", function(error, world) {
   if (error) throw error;
   svg.insert("path", ".graticule")
       .datum(topojson.feature(world, world.objects.land))
