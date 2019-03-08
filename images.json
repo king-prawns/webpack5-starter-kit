@@ -1,5 +1,5 @@
 {
-"items": [
+"type":"Topology","objects":{"images":{"type":"url": [
   {
     "url": "https://storage.googleapis.com/jasonschneider.appspot.com/photo/13l.png"
   },
@@ -677,4 +677,6 @@
   }
 ]
 
+}
+}
 }
