@@ -89,6 +89,10 @@ var projection = d3.geoInterrupt(d3.geoSinusoidalRaw,
 
 var graticule = d3.geoGraticule();
 
+d3.csv('ctrydta.csv', function(error, data) {
+    var selection = d3.select('#map').datum(data);
+    map.draw(selection);
+
 var path = d3.geoPath()
     .projection(projection);
 
