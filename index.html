@@ -60,6 +60,37 @@
   stroke: #fff;
   stroke-width: 0.5px;
 }
+        body {
+        margin: 0;
+        background-color: #2A2C39;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        font-weight: 200;
+        font-size: 17px;
+      }
+      #map-holder {
+        width: 100vw;
+        height: 100vh;
+      }
+      svg rect {
+        fill: #2A2C39;   /* map background colour */
+      }
+      .country{
+        fill: #d0d0d0;   /* country colour */
+        stroke: #2A2C39; /* country border colour */
+        stroke-width: 1; /* country border width */
+      }
+      .country-on{
+        fill: #4B5358;   /* highlight colour for selected country */
+      }
+      .countryLabel{
+        display: none;   /* hide all country labels by default */
+      }
+      .countryName{
+        fill: #FFFAFF;   /* country label text colour */
+      }
+      .countryLabelBg{
+        fill: #30BCED;   /* country label background colour */
+      }
 
 </style>
 <svg width="1292" height="777"></svg>
