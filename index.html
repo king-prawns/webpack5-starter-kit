@@ -67,9 +67,15 @@
 <script src="//d3js.org/topojson.v1.min.js"></script>
 <script>
 
-var svg = d3.select("svg"),
-    width = +svg.attr("width"),
-    height = +svg.attr("height");
+var svg = d3
+        .select("#map-holder")
+        .append("svg")
+        // set to the same size as the "map-holder" div
+        .attr("width", $("#map-holder").width())
+        .attr("height", $("#map-holder").height())
+        // add zoom functionality
+        .call(zoom)
+      ;
 
 var projection = d3.geoInterrupt(d3.geoSinusoidalRaw,
       [[ // northern hemisphere
@@ -192,15 +198,7 @@ function zoomed() {
       });
 
       // create an SVG
-      var svg = d3
-        .select("#map-holder")
-        .append("svg")
-        // set to the same size as the "map-holder" div
-        .attr("width", $("#map-holder").width())
-        .attr("height", $("#map-holder").height())
-        // add zoom functionality
-        .call(zoom)
-      ;
+
 
 var path = d3.geoPath()
     .projection(projection);
