@@ -134,20 +134,6 @@ d3.json("/mbostock/raw/4090846/world-50m.json", function(error, world) {
       .attr("d", path);
 
 
-      d3.json("/images.json", function(error, world) {
-  if (error) throw error;
-
-  svg.insert("path", ".graticule")
-      .datum(topojson.feature(world, world.objects.land))
-      .attr("class", "land")
-      .attr("clip-path", "url(#clip)")
-      .attr("d", path);
-
-  svg.insert("path", ".graticule")
-      .datum(topojson.mesh(world, world.objects.countries, function(a, b) { return a !== b; }))
-      .attr("class", "boundary")
-      .attr("clip-path", "url(#clip)")
-      .attr("d", path);
 });
 
 </script>
