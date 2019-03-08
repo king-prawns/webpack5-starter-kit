@@ -185,8 +185,8 @@ function zoomed() {
       $(window).resize(function() {
         // Resize SVG
         svg
-          .attr("width", $("#map-holder").width())
-          .attr("height", $("#map-holder").height())
+          .attr("width", $("#svg").width())
+          .attr("height", $("#svg").height())
         ;
         initiateZoom();
       });
