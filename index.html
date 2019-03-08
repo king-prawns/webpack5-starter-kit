@@ -120,9 +120,12 @@ svg.append("path")
     .attr("clip-path", "url(#clip)")
     .attr("d", path);
 
-d3.json("https://gist.githubusercontent.com/gorbiz/8271778/raw/59131784976eff93f5897fe92308402196e5ba34/world-50m.json", function(error, world) {
+<!--
+  d3.json("https://gist.githubusercontent.com/gorbiz/8271778/raw/59131784976eff93f5897fe92308402196e5ba34/world-50m.json", function(error, world) {
   if (error) throw error;
-
+-->
+d3.json("https://storage.googleapis.com/jasonschneider.appspot.com/photo/catalogs.json", function(error, world) {
+  if (error) throw error;
   svg.insert("path", ".graticule")
       .datum(topojson.feature(world, world.objects.land))
       .attr("class", "land")
