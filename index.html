@@ -89,7 +89,13 @@ var projection = d3.geoInterrupt(d3.geoSinusoidalRaw,
 
 var graticule = d3.geoGraticule();
 
+// apply zoom to countriesGroup
 
+
+// Define map zoom behaviour
+var zoom = d3
+   .zoom()
+   .on("zoom", zoomed);
 
 var path = d3.geoPath()
     .projection(projection);
@@ -120,7 +126,15 @@ svg.append("path")
     .attr("clip-path", "url(#clip)")
     .attr("d", path);
 
-
+function zoomed() {
+   t = d3
+      .event
+      .transform
+   ;
+   countriesGroup.attr(
+      "transform","translate(" + [t.x, t.y] + ")scale(" + t.k + ")"
+   );
+}
 
 
 d3.json("https://gist.githubusercontent.com/gorbiz/8271778/raw/59131784976eff93f5897fe92308402196e5ba34/world-50m.json", function(error, world) {
@@ -129,7 +143,8 @@ d3.json("https://gist.githubusercontent.com/gorbiz/8271778/raw/59131784976eff93f
       .datum(topojson.feature(world, world.objects.land))
       .attr("class", "land")
       .attr("clip-path", "url(#clip)")
-      .attr("d", path);
+      .attr("d", path)
+      .call(zoom);
 
   svg.insert("path", ".graticule")
       .datum(topojson.mesh(world, world.objects.countries, function(a, b) { return a !== b; }))
