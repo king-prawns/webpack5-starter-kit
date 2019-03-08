@@ -90,7 +90,7 @@ var projection = d3.geoInterrupt(d3.geoSinusoidalRaw,
 var graticule = d3.geoGraticule();
 
 d3.csv('ctrydta.csv', function(error, data) {
-    var selection = d3.select('#map').datum(data);
+    var selection = d3.select('#population').datum(data);
     map.draw(selection);
 
 var path = d3.geoPath()
@@ -136,6 +136,30 @@ d3.json("https://gist.githubusercontent.com/gorbiz/8271778/raw/59131784976eff93f
       .attr("class", "boundary")
       .attr("clip-path", "url(#clip)")
       .attr("d", path);
+
+var countries = countriesGroup
+   .selectAll("path")
+   .data(json.features)
+   .enter()
+   .append("path")
+   .attr("d", path)
+   .attr("id", function(d, i) {
+      return "country" + d.properties.iso_a3;
+   })
+   .attr("class", "country")
+   // add a mouseover action to show name label for feature/country
+   .on("mouseover", function(d, i) {
+      d3.select("#countryLabel" + d.properties.iso_a3).style("display", "block");
+   })
+   .on("mouseout", function(d, i) {
+      d3.select("#countryLabel" + d.properties.iso_a3).style("display", "none");
+   })
+   // add an onclick action to zoom into clicked country
+   .on("click", function(d, i) {
+      d3.selectAll(".country").classed("country-on", false);
+      d3.select(this).classed("country-on", true);
+      boxZoom(path.bounds(d), path.centroid(d), 20);
+   })
 
 
 });
