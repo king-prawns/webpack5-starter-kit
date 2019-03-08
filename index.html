@@ -113,8 +113,17 @@
       // DEFINE FUNCTIONS/OBJECTS
       // Define map projection
       var projection = d3
-        .geoInterrupt(
-          d3.geoSinusoidalRaw()
+        .geoInterrupt(d3.geoSinusoidalRaw(
+          [[ // northern hemisphere
+        [[-180,   0], [-120,  90], [ -60,   0]],
+        [[ -60,   0], [   0,  90], [  60,   0]],
+        [[  60,   0], [ 120,  90], [ 180,   0]]
+      ], [ // southern hemisphere
+        [[-180,   0], [-180, -90], [ -120,  0]],
+        [[-120,   0], [ -60, -90], [   0,   0]],
+        [[   0,   0], [  60, -90], [ 120,   0]],
+        [[ 120,   0], [ 180, -90], [ 180,   0]]
+      ]])
           .center([0, 15]) // set centre to further North as we are cropping more off bottom of map
           .scale([w / (2 * Math.PI)]) // scale to fit group width
           .translate([w / 2, h / 2]) // ensure centred in group
