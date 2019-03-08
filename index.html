@@ -71,8 +71,8 @@ var svg = d3
         .select("#svg")
         .append("svg")
         // set to the same size as the "map-holder" div
-        .attr("width", $("#map-holder").width())
-        .attr("height", $("#map-holder").height())
+        .attr("width", $("#svg").width())
+        .attr("height", $("#svg").height())
         // add zoom functionality
         .call(zoom)
       ;
