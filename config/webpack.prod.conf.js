@@ -70,7 +70,7 @@ module.exports = merge(base, {
     }]
   },
   plugins: [
-    new CleanWebpackPlugin({ verbose: false }),
+    new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: '[chunkhash].app.css'
     }),
