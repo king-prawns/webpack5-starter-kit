@@ -86,17 +86,21 @@ module.exports = merge(base, {
       }
     }),
     // copy assets and manifest.json
-    new CopyWebpackPlugin([
-      {
-        from   : path.resolve(__dirname, '../src/assets'),
-        to     : 'assets',
-        ignore : ['.*', 'styles/*', 'fonts/*']
-      },
-      {
-        from : path.resolve(__dirname, '../src/manifest.json'),
-        to   : ''
-      }
-    ]),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from        : path.resolve(__dirname, '../src/assets'),
+          to          : 'assets',
+          globOptions : {
+            ignore: ['.*', 'styles/*', 'fonts/*']
+          }
+        },
+        {
+          from : path.resolve(__dirname, '../src/manifest.json'),
+          to   : ''
+        }
+      ]
+    }),
     new webpack.DefinePlugin({
       PRODUCTION: JSON.stringify(true)
     }),
