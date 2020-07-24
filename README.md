@@ -2,10 +2,10 @@
 
 Webpack 4 with webpack-dev-server configuration (and Web Components).
 
-## Requirements
+## Dependencies
 
-- Node >= v6.x
-- Yarn >= v1.1 | NPM >= v5.0
+- Node v12.16.0 (or later)
+- Yarn v1.22 (or later) | NPM v6.13.4 (or later)
 
 ## Installation via CLI
 
@@ -41,7 +41,7 @@ src/manifest.json
 * Install dependencies
 
 ```
-$ cd my-app-name
+$ cd your-app-name
 $ yarn
 ```
 
