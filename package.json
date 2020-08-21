@@ -26,7 +26,7 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "7.11.1",
+    "@babel/core": "7.11.4",
     "@babel/plugin-transform-runtime": "7.11.0",
     "@babel/preset-env": "7.11.0",
     "@babel/preset-flow": "7.10.4",
@@ -42,7 +42,7 @@
     "css-loader": "4.2.1",
     "cssnano": "4.1.10",
     "cssnano-preset-advanced": "4.0.7",
-    "eslint": "7.6.0",
+    "eslint": "7.7.0",
     "eslint-config-airbnb-base": "14.2.0",
     "eslint-loader": "4.0.2",
     "eslint-plugin-flowtype": "5.2.0",
@@ -50,7 +50,7 @@
     "file-loader": "6.0.0",
     "flow-bin": "0.131.0",
     "fs-extra": "9.0.1",
-    "html-loader": "1.1.0",
+    "html-loader": "1.2.1",
     "html-webpack-plugin": "4.3.0",
     "http-server": "0.12.3",
     "mini-css-extract-plugin": "0.10.0",
@@ -75,7 +75,7 @@
     "webpack": "4.44.1",
     "webpack-cli": "3.3.12",
     "webpack-dev-server": "3.11.0",
-    "webpack-merge": "5.1.1"
+    "webpack-merge": "5.1.2"
   },
   "dependencies": {}
 }
