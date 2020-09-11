@@ -58,8 +58,7 @@ module.exports = merge(base, {
         {
           loader  : 'postcss-loader', // postprocesses CSS
           options : {
-            sourceMap : true,
-            ident     : 'postcss'
+            sourceMap: true
           }
         },
         {
