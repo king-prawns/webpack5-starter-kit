@@ -58,7 +58,7 @@
     "offline-plugin": "5.0.7",
     "opn": "6.0.0",
     "optimize-css-assets-webpack-plugin": "5.0.4",
-    "ora": "5.1.0",
+    "ora": "5.2.0",
     "postcss-easy-import": "3.0.0",
     "postcss-load-config": "3.0.0",
     "postcss-loader": "4.1.0",
@@ -73,9 +73,9 @@
     "terser-webpack-plugin": "4.2.3",
     "url-loader": "4.1.1",
     "webpack": "4.44.2",
-    "webpack-cli": "4.2.0",
-    "webpack-dev-server": "3.11.0",
-    "webpack-merge": "5.7.2"
+    "webpack-cli": "4.3.0",
+    "webpack-dev-server": "3.11.1",
+    "webpack-merge": "5.7.3"
   },
   "dependencies": {}
 }
