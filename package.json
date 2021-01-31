@@ -1,7 +1,7 @@
 {
-  "name": "webpack4-starter-kit",
+  "name": "webpack5-starter-kit",
   "version": "1.0.5",
-  "description": "Webpack 4 starter kit",
+  "description": "Webpack 5 starter kit",
   "main": "./src/index.js",
   "scripts": {
     "dev": "node ./config/dev",
@@ -14,7 +14,7 @@
   },
   "author": "Giorgio Gamberoni <giorgio.gamberoni@gmail.com> (https://github.com/king-prawns)",
   "license": "MIT",
-  "homepage": "https://github.com/king-prawns/webpack4-starter-kit#readme",
+  "homepage": "https://github.com/king-prawns/webpack5-starter-kit#readme",
   "ava": {
     "files": [
       "./src/**/*test.js"

@@ -1,6 +1,6 @@
-# webpack4-starter-kit
+# webpack5-starter-kit
 
-Webpack 4 with webpack-dev-server configuration (and Web Components).
+Webpack 5 with webpack-dev-server configuration (and Web Components).
 
 ## Dependencies
 
@@ -28,7 +28,7 @@ w4kit
 * Clone this repository
 
 ```
-git clone https://github.com/king-prawns/webpack4-starter-kit.git [your-app-name]
+git clone https://github.com/king-prawns/webpack-starter-kit.git [your-app-name]
 ```
 
 Remove the .git folder and change details within:
@@ -71,7 +71,7 @@ $ yarn httpserver
 
 ## Features
 
-* [Webpack 4](https://github.com/webpack/webpack)
+* [Webpack 5](https://github.com/webpack/webpack)
 * [Webpack Dev Server](https://github.com/webpack/webpack-dev-server)
 * [HMR](https://webpack.js.org/concepts/hot-module-replacement/)
 * [Babel](https://babeljs.io/)
@@ -83,9 +83,8 @@ $ yarn httpserver
 * [Ava](https://github.com/avajs/ava)
 * [nyc](https://github.com/istanbuljs/nyc)
 * [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
-* [Service Worker](https://github.com/NekR/offline-plugin)
 * Webpack Plugins: Html, Copy, MiniCssExtract, Define
 
 ## TypeScript
 
-### Please go to [TS repo](https://github.com/king-prawns/webpack4-starter-kit-ts)
+### Please go to [TS repo](https://github.com/king-prawns/webpack5-starter-kit-ts)

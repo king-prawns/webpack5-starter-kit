@@ -1,12 +1,12 @@
 {
-  "name": "webpack4-starter-kit",
+  "name": "webpack5-starter-kit",
   "version": "1.0.5",
-  "short_name": "w4kit",
+  "short_name": "w5kit",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#FFF",
   "orientation": "portrait-primary",
-  "description": "Webpack 4 starter kit",
+  "description": "Webpack 5 starter kit",
   "theme_color": "#ffd1dc",
   "icons": [
     {
