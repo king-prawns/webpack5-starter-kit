@@ -7,7 +7,6 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const OfflinePlugin = require('offline-plugin');
 const base = require('./webpack.base.conf');
 
 const TITLE = 'PROD - ';
@@ -27,9 +26,7 @@ module.exports = merge(base, {
     },
     minimizer: [
       new TerserPlugin({
-        cache     : true,
-        parallel  : true,
-        sourceMap : false // set to true if you want JS source maps
+        parallel: true
       }),
       new OptimizeCSSAssetsPlugin({
         cssProcessorOptions: {
@@ -75,7 +72,7 @@ module.exports = merge(base, {
     }),
     new HtmlWebpackPlugin({
       filename : path.resolve(__dirname, '../dist/index.html'),
-      template : 'src/index.ejs',
+      template : path.resolve(__dirname, '../src/index.ejs'),
       favicon  : 'favicon.ico', // or use favicons-webpack-plugin
       title    : TITLE,
       minify   : {
@@ -102,11 +99,6 @@ module.exports = merge(base, {
     }),
     new webpack.DefinePlugin({
       PRODUCTION: JSON.stringify(true)
-    }),
-    new OfflinePlugin({
-      ServiceWorker: {
-        minify: false
-      }
     })
   ]
 });
