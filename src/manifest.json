@@ -1,6 +1,6 @@
 {
   "name": "webpack5-starter-kit",
-  "version": "1.0.5",
+  "version": "2.0.0",
   "short_name": "w5kit",
   "start_url": "/",
   "display": "standalone",
