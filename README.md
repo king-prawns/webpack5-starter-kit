@@ -9,16 +9,16 @@ Webpack 5 with webpack-dev-server configuration (and Web Components).
 
 ## Installation via CLI
 
-  * Install w4kit-cli
+  * Install w5kit-cli
 
 ```
-npm install -g w4kit-cli
+npm install -g w5kit-cli
 ```
 
   * Launch the CLI
 
 ```
-w4kit
+w5kit
 ```
 
   * Choose `Vanilla JS`
