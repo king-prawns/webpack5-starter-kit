@@ -31,10 +31,6 @@ module.exports = merge(base, {
           options : {
             sourceMap: true
           }
-        },
-        {
-          // resolves relative paths based on the original source file.
-          loader: 'resolve-url-loader'
         }
       ]
     }]
