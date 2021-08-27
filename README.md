@@ -4,7 +4,7 @@ Webpack 5 with webpack-dev-server configuration (and Web Components).
 
 ## Dependencies
 
-- Node v12.16.0 (or later)
+- Node v14.17.5 (or later)
 - Yarn v1.22 (or later) | NPM v6.13.4 (or later)
 
 ## Installation via CLI
