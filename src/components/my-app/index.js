@@ -1,11 +1,11 @@
 import './style.pcss';
 import view from './template.html';
 
-const html = String.raw;
+const html = (value) => String.raw`${value}`;
 
 export default class MyApp extends HTMLElement {
   static template() {
-    return html`${view}`;
+    return html(view);
   }
 
   connectedCallback() {
