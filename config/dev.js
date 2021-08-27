@@ -1,3 +1,4 @@
+const path = require('path');
 const webpack = require('webpack');
 const WebpackDevServer = require('webpack-dev-server');
 const opn = require('opn');
@@ -9,19 +10,15 @@ const { log } = console;
 const DEFAULT_HOST = 'localhost';
 const DEFAULT_PORT = 8081;
 const options = {
-  host           : DEFAULT_HOST,
-  port           : DEFAULT_PORT,
-  contentBase    : 'src',
-  stats          : 'minimal',
-  clientLogLevel : 'none',
-  watchOptions   : { poll: true },
-  hot            : true,
-  compress       : true,
-  inline         : true,
-  overlay        : true
+  host     : DEFAULT_HOST,
+  port     : DEFAULT_PORT,
+  hot      : true,
+  compress : true,
+  static   : {
+    directory: path.resolve(__dirname, '../src')
+  }
 };
 
-WebpackDevServer.addDevServerEntrypoints(config, options);
 const compiler = webpack(config);
 const server = new WebpackDevServer(compiler, options);
 

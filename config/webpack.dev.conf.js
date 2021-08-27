@@ -12,6 +12,14 @@ module.exports = merge(base, {
     filename   : 'app.js',
     publicPath : '/'
   },
+  entry: [
+    // Runtime code for hot module replacement
+    'webpack/hot/dev-server.js',
+    // Dev server client for web socket transport, hot and live reload logic
+    'webpack-dev-server/client/index.js?hot=true&live-reload=true',
+    // Your entry
+    './src/index.js'
+  ],
   module: {
     rules: [{
       test : /(\.css|\.pcss)$/,
