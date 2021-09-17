@@ -1,5 +1,5 @@
 import test from 'ava';
-import { sum, sub } from '../index';
+import { sum, sub } from './index';
 
 test('sum', (t) => {
   t.plan(2);
