@@ -12,7 +12,6 @@ const DEFAULT_PORT = 8081;
 const options = {
   host     : DEFAULT_HOST,
   port     : DEFAULT_PORT,
-  hot      : true,
   compress : true,
   static   : {
     directory: path.resolve(__dirname, '../src')

@@ -15,8 +15,8 @@ module.exports = merge(base, {
   entry: [
     // Runtime code for hot module replacement
     'webpack/hot/dev-server.js',
-    // Dev server client for web socket transport, hot and live reload logic
-    'webpack-dev-server/client/index.js?hot=true&live-reload=true',
+    // Dev server client for web socket transport and live reload logic
+    'webpack-dev-server/client/index.js?live-reload=true',
     // Your entry
     './src/index.js'
   ],
@@ -44,7 +44,6 @@ module.exports = merge(base, {
     }]
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       template : 'src/index.ejs',
       favicon  : 'favicon.ico', // or use favicons-webpack-plugin
