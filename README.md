@@ -28,7 +28,7 @@ w5kit
 * Clone this repository
 
 ```
-git clone https://github.com/king-prawns/webpack-starter-kit.git [your-app-name]
+git clone https://github.com/king-prawns/webpack5-starter-kit.git [your-app-name]
 ```
 
 Remove the .git folder and change details within:
