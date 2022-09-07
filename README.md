@@ -72,18 +72,12 @@ $ yarn httpserver
 ## Features
 
 * [Webpack 5](https://github.com/webpack/webpack)
-* [Webpack Dev Server](https://github.com/webpack/webpack-dev-server)
-* [HMR](https://webpack.js.org/concepts/hot-module-replacement/)
-* [Babel](https://babeljs.io/)
 * [Flow](https://flow.org/)
 * [EsLint](https://eslint.org/docs/user-guide/getting-started)
 * [StyleLint](https://github.com/stylelint/stylelint)
 * [Postcss](https://github.com/postcss/postcss)
-* [Autoprefixer](https://github.com/postcss/autoprefixer)
-* [Ava](https://github.com/avajs/ava)
-* [nyc](https://github.com/istanbuljs/nyc)
+* [Jest](https://github.com/facebook/jest)
 * [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
-* Webpack Plugins: Html, Copy, MiniCssExtract, Define
 
 ## TypeScript
 
