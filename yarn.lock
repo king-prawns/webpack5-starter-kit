@@ -3969,10 +3969,10 @@ eslint-plugin-import@2.26.0:
     resolve "^1.22.0"
     tsconfig-paths "^3.14.1"
 
-eslint-plugin-jest@27.0.4:
-  version "27.0.4"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-27.0.4.tgz#ab9c7b3f48bfade4762c24c415a5d9bbc0174a61"
-  integrity sha512-BuvY78pHMpMJ6Cio7sKg6jrqEcnRYPUc4Nlihku4vKx3FjlmMINSX4vcYokZIe+8TKcyr1aI5Kq7vYwgJNdQSA==
+eslint-plugin-jest@27.1.1:
+  version "27.1.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-27.1.1.tgz#60f68dee15d4ffd9cdff65158d7fa46a65dbaaf5"
+  integrity sha512-vuSuXGKHHi/UAffIM46QKm4g0tQP+6n52nRxUpMq6x6x9rhnv5WM7ktSu3h9cTnXE4b0Y0ODQTgRlCm9rdRLvg==
   dependencies:
     "@typescript-eslint/utils" "^5.10.0"
 
@@ -4353,10 +4353,10 @@ flatted@^3.1.0:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.1.1.tgz#c4b489e80096d9df1dfc97c79871aea7c617c469"
   integrity sha512-zAoAQiudy+r5SvnSw3KJy5os/oRJYHzrzja/tBDqrZtNhUw8bt6y8OBzMWcjWr+8liV8Eb6yOhw8WZ7VFZ5ZzA==
 
-flow-bin@0.188.1:
-  version "0.188.1"
-  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.188.1.tgz#1043ec955eec8cd402ec9fb4c49054bf14368c06"
-  integrity sha512-tQehbFoeXKz/MZqEClBB2ezuT1HHKoBlv6t8mAoUdFk1PaFhqcEmjx+1Bn0xygykrqHy0FY6C3z+AGleOnFbdQ==
+flow-bin@0.188.2:
+  version "0.188.2"
+  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.188.2.tgz#ddea41323fc50a1997334b0b496af2e27a25a91d"
+  integrity sha512-zvm1bEEj4n3wdsXm+EA49e/CiZ966kLFJpHbheYdr73P/qMzKk25zeoPTRauNHSsKILK0mL+2QadKii/nf+fkw==
 
 follow-redirects@^1.0.0:
   version "1.14.8"
