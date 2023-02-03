@@ -4260,10 +4260,10 @@ eslint-visitor-keys@^3.3.0:
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-3.3.0.tgz#f6480fa6b1f30efe2d1968aa8ac745b862469826"
   integrity sha512-mQ+suqKJVyeuwGYHAdjMFqjCyfl8+Ldnxuyp3ldiMBFKkvytrXUZWaiPCEav8qDHKty44bD+qV1IP4T+w+xXRA==
 
-eslint@8.32.0:
-  version "8.32.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-8.32.0.tgz#d9690056bb6f1a302bd991e7090f5b68fbaea861"
-  integrity sha512-nETVXpnthqKPFyuY2FNjz/bEd6nbosRgKbkgS/y1C7LJop96gYHWpiguLecMHQ2XCPxn77DS0P+68WzG6vkZSQ==
+eslint@8.33.0:
+  version "8.33.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-8.33.0.tgz#02f110f32998cb598c6461f24f4d306e41ca33d7"
+  integrity sha512-WjOpFQgKK8VrCnAtl8We0SUOy/oVZ5NHykyMiagV1M9r8IFpIJX7DduK6n1mpfhlG7T1NLWm2SuD8QB7KFySaA==
   dependencies:
     "@eslint/eslintrc" "^1.4.1"
     "@humanwhocodes/config-array" "^0.11.8"
@@ -4587,10 +4587,10 @@ flatted@^3.1.0:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.1.1.tgz#c4b489e80096d9df1dfc97c79871aea7c617c469"
   integrity sha512-zAoAQiudy+r5SvnSw3KJy5os/oRJYHzrzja/tBDqrZtNhUw8bt6y8OBzMWcjWr+8liV8Eb6yOhw8WZ7VFZ5ZzA==
 
-flow-bin@0.198.2:
-  version "0.198.2"
-  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.198.2.tgz#e601121a411b4ec5889cc3567d2706369cc510a9"
-  integrity sha512-PML2zhAZVd8EgzDqS9oSJF+OxUtJ+YLEdVVsVO7d1BwnrXCgiVrLjxiQP8/hur820grzC51Xb2CI3J+ohH/bMg==
+flow-bin@0.199.1:
+  version "0.199.1"
+  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.199.1.tgz#678eac2303fa898227f4d103264b6ce49f4430c1"
+  integrity sha512-Ic0Mp9iZ2exbH0mNj/XhzUWPZa9JylHb6uQARZnnYCTRwumOpjNOP0qwyRTltWrbCpfHjnWngNO9VLaVKHz2aQ==
 
 follow-redirects@^1.0.0:
   version "1.14.8"
@@ -5928,15 +5928,6 @@ jest-worker@^27.4.5:
   version "27.4.6"
   resolved "https://registry.yarnpkg.com/jest-worker/-/jest-worker-27.4.6.tgz#5d2d93db419566cb680752ca0792780e71b3273e"
   integrity sha512-gHWJF/6Xi5CTG5QCvROr6GcmpIqNYpDJyc8A1h/DyXqH1tD6SnRCM0d3U5msV31D2LB/U+E0M+W4oyvKV44oNw==
-  dependencies:
-    "@types/node" "*"
-    merge-stream "^2.0.0"
-    supports-color "^8.0.0"
-
-jest-worker@^28.1.0:
-  version "28.1.0"
-  resolved "https://registry.yarnpkg.com/jest-worker/-/jest-worker-28.1.0.tgz#ced54757a035e87591e1208253a6e3aac1a855e5"
-  integrity sha512-ZHwM6mNwaWBR52Snff8ZvsCTqQsvhCxP/bT1I6T6DAnb6ygkshsyLQIMxFwHpYxht0HOoqt23JlC01viI7T03A==
   dependencies:
     "@types/node" "*"
     merge-stream "^2.0.0"
@@ -7473,10 +7464,10 @@ postcss-place@^8.0.0:
   dependencies:
     postcss-value-parser "^4.2.0"
 
-postcss-preset-env@8.0.0:
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-preset-env/-/postcss-preset-env-8.0.0.tgz#17830b4a9f3317c47be092345c96e52317471c27"
-  integrity sha512-/kFWdq109OONR2Hl3T3nmo1dOdS7lHB6kF/nPaBn/2lGjQ99f/j5vGBYvupSmSni+F7T/0A0Xb0nfbJLnxwdjA==
+postcss-preset-env@8.0.1:
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/postcss-preset-env/-/postcss-preset-env-8.0.1.tgz#d249c137febc037dd5dbb97e18f94dba4dd0cda8"
+  integrity sha512-IUbymw0JlUbyVG+I85963PNWgPp3KhnFa1sxU7M/2dGthxV8e297P0VV5W9XcyypoH4hirH2fp1c6fmqh6YnSg==
   dependencies:
     "@csstools/postcss-cascade-layers" "^3.0.0"
     "@csstools/postcss-color-function" "^2.0.0"
@@ -8607,13 +8598,13 @@ stylelint-config-standard@29.0.0:
   dependencies:
     stylelint-config-recommended "^9.0.0"
 
-stylelint-webpack-plugin@3.3.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/stylelint-webpack-plugin/-/stylelint-webpack-plugin-3.3.0.tgz#3ba40e2b2b2b7d1802fa53618e01fc28bc21ffb3"
-  integrity sha512-F53bapIZ9zI16ero8IWm6TrUE6SSibZBphJE9b5rR2FxtvmGmm1YmS+a5xjQzn63+cv71GVSCu4byX66fBLpEw==
+stylelint-webpack-plugin@4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/stylelint-webpack-plugin/-/stylelint-webpack-plugin-4.0.0.tgz#c7a5ff037adc3d8029ef88cab766f656866bc8e6"
+  integrity sha512-VDxJ2/TLvykZCwa6CLfqN6pR/smkI3ry5x+p4ujxdJklUyEmkcxxumpL3x1k9XI55IxPqu8d2wXcGo3qWBChHA==
   dependencies:
     globby "^11.1.0"
-    jest-worker "^28.1.0"
+    jest-worker "^29.4.1"
     micromatch "^4.0.5"
     normalize-path "^3.0.0"
     schema-utils "^4.0.0"
