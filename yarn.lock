@@ -1593,10 +1593,10 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@eslint/js@8.50.0":
-  version "8.50.0"
-  resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.50.0.tgz#9e93b850f0f3fa35f5fa59adfd03adae8488e484"
-  integrity sha512-NCC3zz2+nvYd+Ckfh87rA47zfu2QsQpvc6k1yzTk+b9KzRj0wkGa8LSoGOXN6Zv4lRf/EIoZ80biDh9HOI+RNQ==
+"@eslint/js@8.51.0":
+  version "8.51.0"
+  resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.51.0.tgz#6d419c240cfb2b66da37df230f7e7eef801c32fa"
+  integrity sha512-HxjQ8Qn+4SI3/AFv6sOrDB+g6PpUTDwSJiQqOrnneEk8L71161srI9gjzzZvYVbzHiVg/BvcH95+cK/zfIt4pg==
 
 "@humanwhocodes/config-array@^0.11.11":
   version "0.11.11"
@@ -3973,10 +3973,10 @@ eslint-plugin-import@2.28.1:
     semver "^6.3.1"
     tsconfig-paths "^3.14.2"
 
-eslint-plugin-jest@27.4.0:
-  version "27.4.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-27.4.0.tgz#3926cca723c40c3d7a3fe0e1fd911eff5e681f50"
-  integrity sha512-ukVeKmMPAUA5SWjHenvyyXnirKfHKMdOsTZdn5tZx5EW05HGVQwBohigjFZGGj3zuv1cV6hc82FvWv6LdIbkgg==
+eslint-plugin-jest@27.4.2:
+  version "27.4.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-27.4.2.tgz#181d999ac67a9b6040db1d27935887cf5a2882ed"
+  integrity sha512-3Nfvv3wbq2+PZlRTf2oaAWXWwbdBejFRBR2O8tAO67o+P8zno+QGbcDYaAXODlreXVg+9gvWhKKmG2rgfb8GEg==
   dependencies:
     "@typescript-eslint/utils" "^5.10.0"
 
@@ -4016,15 +4016,15 @@ eslint-visitor-keys@^3.4.3:
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-3.4.3.tgz#0cd72fe8550e3c2eae156a96a4dddcd1c8ac5800"
   integrity sha512-wpc+LXeiyiisxPlEkUzU6svyS1frIO3Mgxj1fdy7Pm8Ygzguax2N3Fa/D/ag1WqbOprdI+uY6wMUl8/a2G+iag==
 
-eslint@8.50.0:
-  version "8.50.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-8.50.0.tgz#2ae6015fee0240fcd3f83e1e25df0287f487d6b2"
-  integrity sha512-FOnOGSuFuFLv/Sa+FDVRZl4GGVAAFFi8LecRsI5a1tMO5HIE8nCm4ivAlzt4dT3ol/PaaGC0rJEEXQmHJBGoOg==
+eslint@8.51.0:
+  version "8.51.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-8.51.0.tgz#4a82dae60d209ac89a5cff1604fea978ba4950f3"
+  integrity sha512-2WuxRZBrlwnXi+/vFSJyjMqrNjtJqiasMzehF0shoLaW7DzS3/9Yvrmq5JiT66+pNjiX4UBnLDiKHcWAr/OInA==
   dependencies:
     "@eslint-community/eslint-utils" "^4.2.0"
     "@eslint-community/regexpp" "^4.6.1"
     "@eslint/eslintrc" "^2.1.2"
-    "@eslint/js" "8.50.0"
+    "@eslint/js" "8.51.0"
     "@humanwhocodes/config-array" "^0.11.11"
     "@humanwhocodes/module-importer" "^1.0.1"
     "@nodelib/fs.walk" "^1.2.8"
@@ -4353,10 +4353,10 @@ flatted@^3.1.0:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.2.7.tgz#609f39207cb614b89d0765b477cb2d437fbf9787"
   integrity sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==
 
-flow-bin@0.217.0:
-  version "0.217.0"
-  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.217.0.tgz#c255b4d8d815520d396416c2f712ab849d61f467"
-  integrity sha512-AbbDE6QUpR+jpY9ejNROAk0P5D/2PxJzjU4D5vfmMwtS+QjjPjzfZGuatEJIn2k4PTZ2agbncaCtyHGO0AvG7A==
+flow-bin@0.218.0:
+  version "0.218.0"
+  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.218.0.tgz#f91acd8a31d472cd8568442819d925c0881081f7"
+  integrity sha512-u4E0+AIoKKMSuv09Co2mNiQB2DqCcakWtMAPbMkVvvTTNoBSo+gYKrYKoRrmb0QqhdyHy1mRXQXjESW8Lml/MA==
 
 follow-redirects@^1.0.0:
   version "1.15.2"
