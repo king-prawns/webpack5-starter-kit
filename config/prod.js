@@ -1,13 +1,12 @@
 const path = require('path');
 const webpack = require('webpack');
 const fs = require('fs-extra');
-const chalk = require('chalk');
 const config = require('./webpack.prod.conf');
 
-console.log(chalk.green('Building...'));
+console.log('Building...');
 fs.remove(path.resolve(__dirname, '../dist'), (err) => {
   if (err) {
-    console.log(chalk.red('error - fs.remove'));
+    console.error('error - fs.remove');
     throw err;
   }
   webpack(config, (werr, stats) => {
@@ -26,7 +25,7 @@ fs.remove(path.resolve(__dirname, '../dist'), (err) => {
       }));
 
       console.log('\n');
-      console.log(chalk.red('Build error. 😭'));
+      console.error('Build error. 😭');
       return;
     }
 
@@ -38,8 +37,8 @@ fs.remove(path.resolve(__dirname, '../dist'), (err) => {
       chunkModules : false
     })}\n\n`);
 
-    console.log(chalk.green('Build complete. 🎉\n'));
-    console.log(chalk.yellow(' Tip: built files are meant to be served over an HTTP server.\n'
-      + ' Opening index.html over file:// won\'t work.\n'));
+    console.log('Build complete. 🎉\n');
+    console.log(' Tip: built files are meant to be served over an HTTP server.\n'
+      + ' Opening index.html over file:// won\'t work.\n');
   });
 });
