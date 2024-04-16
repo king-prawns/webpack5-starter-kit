@@ -41,7 +41,7 @@
     "css-loader": "7.1.1",
     "cssnano": "6.1.2",
     "cssnano-preset-advanced": "6.1.2",
-    "eslint": "8.57.0",
+    "eslint": "9.0.0",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-plugin-flowtype": "8.0.3",
     "eslint-plugin-import": "2.29.1",
@@ -60,7 +60,7 @@
     "postcss-easy-import": "4.0.0",
     "postcss-load-config": "5.0.3",
     "postcss-loader": "8.1.1",
-    "postcss-preset-env": "9.5.4",
+    "postcss-preset-env": "9.5.5",
     "postcss-reporter": "7.1.0",
     "postcss-responsive-type": "1.0.0",
     "style-loader": "4.0.0",
@@ -71,7 +71,7 @@
     "url-loader": "4.1.1",
     "webpack": "5.91.0",
     "webpack-cli": "5.1.4",
-    "webpack-dev-server": "4.15.1",
+    "webpack-dev-server": "5.0.4",
     "webpack-merge": "5.10.0"
   },
   "dependencies": {}

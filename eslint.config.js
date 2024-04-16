@@ -1,21 +1,21 @@
+const babelParser = require('@babel/eslint-parser');
+const flowtypePlugin = require('eslint-plugin-flowtype');
+const jestPlugin = require('eslint-plugin-jest');
+const importPlugin = require('eslint-plugin-import');
+
 module.exports = {
-  parser  : '@babel/eslint-parser',
-  extends : [
-    'airbnb-base'
-  ],
-  env: {
-    browser : true,
-    es6     : true,
-    node    : true,
-    jest    : true
+  languageOptions: {
+    parser  : babelParser,
+    globals : {
+      PRODUCTION: true
+    }
   },
-  globals: {
-    PRODUCTION: true
+  ignores : ['src/assets/*'],
+  plugins : {
+    'flowtype' : flowtypePlugin,
+    'jest'     : jestPlugin,
+    'import'   : importPlugin
   },
-  plugins: [
-    'flowtype',
-    'jest'
-  ],
   rules: {
     'no-console'                        : 0,
     'global-require'                    : 0,

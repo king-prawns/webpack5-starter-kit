@@ -18,10 +18,10 @@ const options = {
 };
 
 const compiler = webpack(config);
-const server = new WebpackDevServer(compiler, options);
+const server = new WebpackDevServer(options, compiler);
 
 log('Starting the dev web server...');
-server.listen(DEFAULT_PORT, DEFAULT_HOST, (err) => {
+server.start(DEFAULT_PORT, DEFAULT_HOST, (err) => {
   if (err) {
     error(err);
   }
