@@ -47,7 +47,7 @@
     "eslint-plugin-import": "2.29.1",
     "eslint-plugin-jest": "28.6.0",
     "file-loader": "6.2.0",
-    "flow-bin": "0.238.1",
+    "flow-bin": "0.238.2",
     "fs-extra": "11.2.0",
     "html-loader": "5.0.0",
     "html-webpack-plugin": "5.6.0",
