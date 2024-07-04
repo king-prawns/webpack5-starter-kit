@@ -41,13 +41,13 @@
     "css-loader": "7.1.2",
     "cssnano": "7.0.3",
     "cssnano-preset-advanced": "7.0.3",
-    "eslint": "9.5.0",
+    "eslint": "9.6.0",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-plugin-flowtype": "8.0.3",
     "eslint-plugin-import": "2.29.1",
     "eslint-plugin-jest": "28.6.0",
     "file-loader": "6.2.0",
-    "flow-bin": "0.238.2",
+    "flow-bin": "0.239.0",
     "fs-extra": "11.2.0",
     "html-loader": "5.0.0",
     "html-webpack-plugin": "5.6.0",
@@ -56,11 +56,11 @@
     "mini-css-extract-plugin": "2.9.0",
     "opn": "6.0.0",
     "optimize-css-assets-webpack-plugin": "6.0.1",
-    "postcss": "8.4.38",
+    "postcss": "8.4.39",
     "postcss-easy-import": "4.0.0",
     "postcss-load-config": "6.0.1",
     "postcss-loader": "8.1.1",
-    "postcss-preset-env": "9.5.14",
+    "postcss-preset-env": "9.5.15",
     "postcss-reporter": "7.1.0",
     "postcss-responsive-type": "1.0.0",
     "style-loader": "4.0.0",
@@ -72,7 +72,7 @@
     "webpack": "5.92.1",
     "webpack-cli": "5.1.4",
     "webpack-dev-server": "5.0.4",
-    "webpack-merge": "5.10.0"
+    "webpack-merge": "6.0.1"
   },
   "dependencies": {}
 }
