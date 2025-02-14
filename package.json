@@ -65,7 +65,7 @@
     "postcss-responsive-type": "1.0.0",
     "style-loader": "4.0.0",
     "stylelint": "16.14.1",
-    "stylelint-config-standard": "36.0.1",
+    "stylelint-config-standard": "37.0.0",
     "stylelint-webpack-plugin": "5.0.1",
     "terser-webpack-plugin": "5.3.11",
     "url-loader": "4.1.1",
