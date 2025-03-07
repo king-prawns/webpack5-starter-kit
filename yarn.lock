@@ -4575,10 +4575,10 @@ flatted@^3.3.3:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.3.3.tgz#67c8fad95454a7c7abebf74bb78ee74a44023358"
   integrity sha512-GX+ysw4PBCz0PzosHDepZGANEuFCMLrnRTiEy9McGjmkCQYwRq4A/X786G/fjM/+OjsWSU1ZrY5qyARZmO/uwg==
 
-flow-bin@0.262.0:
-  version "0.262.0"
-  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.262.0.tgz#612f7cb96c51d9fe7e6819ab9d582f19e5674554"
-  integrity sha512-B7l0NcpQ3uZuaWs07aQCjG+8fcxF/awbEmuf1p/6a/ZnQjPBB5uIzWmTuxdnrQns5/2orCpC37k9FJuRP7Aj3g==
+flow-bin@0.263.0:
+  version "0.263.0"
+  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.263.0.tgz#0a836bdf82855d5df9858c781818ce51612be064"
+  integrity sha512-FkQywD+7wXru/7/SWJPVnZXUp6CW3XtrVZ26vhAdVfMx9xlwq/Zk/tXcn3OQuiHUA4kQvZNyfgRztp6oXgjsog==
 
 follow-redirects@^1.0.0:
   version "1.15.6"
@@ -8408,10 +8408,10 @@ tapable@^2.0.0, tapable@^2.1.1, tapable@^2.2.0, tapable@^2.2.1:
   resolved "https://registry.yarnpkg.com/tapable/-/tapable-2.2.1.tgz#1967a73ef4060a82f12ab96af86d52fdb76eeca0"
   integrity sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==
 
-terser-webpack-plugin@5.3.12:
-  version "5.3.12"
-  resolved "https://registry.yarnpkg.com/terser-webpack-plugin/-/terser-webpack-plugin-5.3.12.tgz#d9518c80493081bace668aa8613b22e4a838810c"
-  integrity sha512-jDLYqo7oF8tJIttjXO6jBY5Hk8p3A8W4ttih7cCEq64fQFWmgJ4VqAQjKr7WwIDlmXKEc6QeoRb5ecjZ+2afcg==
+terser-webpack-plugin@5.3.14:
+  version "5.3.14"
+  resolved "https://registry.yarnpkg.com/terser-webpack-plugin/-/terser-webpack-plugin-5.3.14.tgz#9031d48e57ab27567f02ace85c7d690db66c3e06"
+  integrity sha512-vkZjpUjb6OMS7dhV+tILUW6BhpDR7P2L/aQSAv+Uwk+m8KATX9EccViHTJR2qDtACKPIYndLGCyl3FMo+r2LMw==
   dependencies:
     "@jridgewell/trace-mapping" "^0.3.25"
     jest-worker "^27.4.5"
