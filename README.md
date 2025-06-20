@@ -76,4 +76,4 @@ $ yarn httpserver
 
 ## TypeScript
 
-### Please go to [TS repo](https://github.com/king-prawns/webpack5-starter-kit-ts)
+### [TypeScript repository](https://github.com/king-prawns/webpack5-starter-kit-ts)
