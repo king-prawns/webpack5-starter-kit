@@ -1,15 +1,12 @@
 module.exports = async () => {
   const postcssPresetEnv = (await import('postcss-preset-env')).default;
   const cssnano = (await import('cssnano')).default;
+  const postcssResponsiveType = (await import('postcss-responsive-type')).default;
+  const postcssReporter = (await import('postcss-reporter')).default;
 
   return {
     plugins: [
-      require('stylelint'),
-      require('postcss-easy-import')({
-        extensions: '.pcss',
-        plugins: [require('stylelint')()]
-      }),
-      require('postcss-responsive-type'),
+      postcssResponsiveType,
       postcssPresetEnv({
         browsers: '> 0.25%, not dead, not ie 11',
         stage: 0,
@@ -20,7 +17,7 @@ module.exports = async () => {
       cssnano({
         preset: ['advanced', { zindex: false }]
       }),
-      require('postcss-reporter')({
+      postcssReporter({
         clearReportedMessages: true
       })
     ]

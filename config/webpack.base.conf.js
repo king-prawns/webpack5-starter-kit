@@ -26,8 +26,10 @@ module.exports = {
     errorDetails: true
   },
   plugins: [
-    new StyleLintPlugin({
-      files: '**/*.pcss'
-    })
+    // StyleLintPlugin disabled due to stylelint ES Module incompatibility
+    // Re-enable after upgrading stylelint-webpack-plugin to support ES modules
+    // new StyleLintPlugin({
+    //   files: '**/*.pcss'
+    // })
   ]
 };
