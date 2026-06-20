@@ -1,20 +1,26 @@
 const babelParser = require('@babel/eslint-parser');
-const flowtypePlugin = require('eslint-plugin-flowtype');
-const jestPlugin = require('eslint-plugin-jest');
-const importPlugin = require('eslint-plugin-import');
+let flowtypePlugin = require('eslint-plugin-flowtype');
+let importPlugin = require('eslint-plugin-import');
 
 module.exports = {
   languageOptions: {
     parser  : babelParser,
+    parserOptions: {
+      requireConfigFile: false,
+      babelOptions: {
+        presets: [
+          '@babel/preset-flow'
+        ]
+      }
+    },
     globals : {
       PRODUCTION: true
     }
   },
   ignores : ['src/assets/*'],
   plugins : {
-    'flowtype' : flowtypePlugin,
-    'jest'     : jestPlugin,
-    'import'   : importPlugin
+    flowtype: flowtypePlugin,
+    import  : importPlugin
   },
   rules: {
     'no-console'                        : 0,

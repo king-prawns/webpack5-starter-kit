@@ -16,6 +16,16 @@ module.exports = {
       diagnostics: {
         ignoreCodes: ['TS151001']
       }
+    },
+    'babel-jest': {
+      useESM: true
     }
-  }
+  },
+  transform: {
+    '^.+\\.[jt]sx?$': ['babel-jest', { configFile: false }]
+  },
+  transformIgnorePatterns: ['node_modules/(?!(?:@babel)/)'],
+  testEnvironment: 'node',
+
 };
+
